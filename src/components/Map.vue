@@ -5,13 +5,8 @@
 <script setup lang="ts">
   import * as Cesium from 'cesium';
   import 'cesium/Build/Cesium/Widgets/widgets.css';
-  import { onMounted, reactive, ref } from 'vue';
+  import { onMounted, ref } from 'vue';
   import { Building } from '../types/models';
-
-  interface State {
-    viewer?: Cesium.Viewer;
-    attributes: any;
-  }
 
   const viewer = ref<Cesium.Viewer>();
 
